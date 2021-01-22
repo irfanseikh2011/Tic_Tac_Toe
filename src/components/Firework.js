@@ -4,7 +4,7 @@ function Firework(props) {
   let fxProps = {
     count: 3,
     interval: 200,
-    colors: ['#cc3333', '#4CAF50', '#81C784'],
+    colors: ['#12E177', '#FFC72A', '#FFC72A'],
     calc: (props, i) => ({
       ...props,
       x: (i + 1) * (window.innerWidth / 3) - (i + 1) * 100,

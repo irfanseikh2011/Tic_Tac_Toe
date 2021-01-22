@@ -16,6 +16,9 @@ const App = () => {
 
   const { winner, winningSquares } = calculateWinner(current.board);
 
+
+  console.log(history);
+
   const handleSquareClick = position => {
     if (current.board[position] || winner) {
       return;
@@ -42,9 +45,13 @@ const App = () => {
     setCurrentMove(move);
   };
 
+
+  
   const onNewGame = () => {
     setHistory(NEW_GAME);
     setCurrentMove(0);
+    window.location.reload(false);
+  
   };
 
   return (
