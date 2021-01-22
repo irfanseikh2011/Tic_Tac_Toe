@@ -3,6 +3,7 @@ import Board from './components/Board';
 import History from './components/History';
 import StatusMessage from './components/StatusMessage';
 import { calculateWinner } from './helper';
+import Firework from './components/Firework';
 
 import './styles/root.scss';
 
@@ -51,7 +52,8 @@ const App = () => {
       <h1>
         TIC <span className="text-green">TAC</span> TOE
       </h1>
-      <StatusMessage winner={winner} current={current} />
+      <StatusMessage winner={winner} current={current} /> 
+      <Firework winner={winner}/>
       <Board
         board={current.board}
         handleSquareClick={handleSquareClick}
